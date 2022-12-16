@@ -71,7 +71,7 @@
         //查询，发起get并渲染
         function getbookslist() {
             // console.log(11);
-            $.get("https://img.lbcolor.cn/3.php?action=read", function (res) {
+            $.get("http://img.lbcolor.cn/3.php?action=read", function (res) {
                 loadindex(res); //渲染首页
             })
         }
@@ -87,15 +87,6 @@
                     ele
                     .id + '.html' + '" role="button" style="font-size: 15px;">阅读全文</a></p>' +
                     '<hr>')
-                // // 改写所有按钮
-                // let id = ele.id;
-                // $("#jumbotron").on("click", "a", function () {
-                //     $("a").prop("href", "11111111111111111111");
-                //     alert(111)
-                // })
-
-
-
             })
 
         }

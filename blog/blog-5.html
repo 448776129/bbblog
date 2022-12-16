@@ -19,7 +19,7 @@
     </style>
 </head>
 
-<body style="padding: 25px; border: 1px solid red;">
+<body style="padding: 25px;">
     <div class="container">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
@@ -58,7 +58,7 @@
         //查询，发起get并渲染
         function getbookslist() {
             // console.log(11);
-            $.get("https://img.lbcolor.cn/3.php?action=read", function (res) {
+            $.get("http://img.lbcolor.cn/3.php?action=read", function (res) {
                 load(res); // 渲染文字数据
             })
         }
